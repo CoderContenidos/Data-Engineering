@@ -6,6 +6,7 @@ drive.mount('/content/gdrive')
 
 %cd '/content/gdrive/MyDrive'
 
+import pandas as pd
 ### Lectura de archivo
 df= pd.read_csv('winequality-red.csv',sep=',')
 # Mostrar primeras 5 filas
