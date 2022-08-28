@@ -4,6 +4,7 @@ import os
 drive.mount('/content/gdrive')
 # Cambiar ruta
 %cd '/content/gdrive/MyDrive'
+import pandas as pd
 # Lectura de archivo
 df= pd.read_csv('pokemon_data.txt',delimiter='\t')
 # Mostrar ultimas 5 filas
