@@ -9,3 +9,6 @@ FROM my_secure_schema.my_secure_table;
 
 SELECT name, dob, zip, ssn
 FROM my_secure_schema.my_secure_table;
+
+--La primera consulta debera arrojar 0 filas mientras que la segunda mostrara un error
+
