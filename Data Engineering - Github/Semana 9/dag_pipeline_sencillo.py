@@ -73,7 +73,7 @@ def cargar_data(exec_date):
 
 # argumentos por defecto para el DAG
 default_args = {
-    'owner': 'airflow',
+    'owner': 'DavidBU',
     'start_date': days_ago(5)
 }
 
