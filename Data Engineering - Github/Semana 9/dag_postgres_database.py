@@ -39,6 +39,7 @@ with DAG(
             insert into fin_mundo (dt,pais) values ('18-08-2026','Uruguay');
             insert into fin_mundo (dt,pais) values ('22-05-2037','Paraguay');
             insert into fin_mundo (dt,pais) values ('12-12-2080','Venezuela');
+            insert into fin_mundo (dt,pais) values ('12-12-2071','Mexico');
         """
     )
     task1 >> task2
