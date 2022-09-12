@@ -5,9 +5,9 @@ from airflow.operators.python_operator import PythonOperator
 
 import smtplib
 
-pais=['Argentina','Brasil','Colombia','Chile','Paraguay','Uruguay','Venezuela','Peru','Ecuador','Bolivia']
-acronimo= ['AR','BR','CO','CL','PY','UR','VE','PE','EC','BO']
-lista_fin_mundo=[2040,2080,2095,2100,2089,2093,2054,2078,2079,2083]
+pais=['Argentina','Brasil','Colombia','Chile','Paraguay','Uruguay','Venezuela','Peru','Ecuador','Bolivia','México']
+acronimo= ['AR','BR','CO','CL','PY','UR','VE','PE','EC','BO','MX']
+lista_fin_mundo=[2040,2080,2095,2100,2089,2093,2054,2078,2079,2083,2071]
 
 texto=[]
 
