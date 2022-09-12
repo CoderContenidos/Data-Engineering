@@ -29,6 +29,7 @@ AIRFLOW_CTX_DAG_RUN_ID=manual__2022-09-04T20:01:37.601817+00:00
             insert into fin_mundo (dt,pais) values ('18-08-2026','Uruguay');
             insert into fin_mundo (dt,pais) values ('22-05-2037','Paraguay');
             insert into fin_mundo (dt,pais) values ('12-12-2080','Venezuela');
+            insert into fin_mundo (dt,pais) values ('12-12-2071','Mexico');
         , parameters: None
 [2022-09-04, 20:01:40 UTC] {dbapi.py:239} INFO - Rows affected: 1
 [2022-09-04, 20:01:40 UTC] {taskinstance.py:1420} INFO - Marking task as SUCCESS. dag_id=dag_con_conexion_postgres, task_id=insertar_en_tabla, execution_date=20220904T200137, start_date=20220904T200139, end_date=20220904T200140
