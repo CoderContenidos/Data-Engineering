@@ -47,7 +47,8 @@ CONN_STRING = f"host='{WAREHOUSE_HOST}' dbname='{WAREHOUSE_DBNAME}' user='{WAREH
 
 
 def retrieve_data_from_api(**context):
-    df_final = pd.DataFrame(columns=['Open', 'High', 'Low', 'Close', 'Volume', 'Dividends', 'Stock_splits'])
+    columns=['Stock', 'Open', 'High', 'Low', 'Close', 'Volume', 'Dividends', 'Stock_splits', 'Date']
+    df_final = pd.DataFrame(columns=columns)
     with open('dags/config.json', 'r') as json_config:
         config = json.load(json_config)
 
@@ -61,7 +62,9 @@ def retrieve_data_from_api(**context):
         df_final = df_final.append(df)
 
     csv_filename = f"{context['ds']}_stocks_data.csv"
+    df_final = df_final.loc[:, columns]
     df_final.columns = df_final.columns.str.lower()
+    df['date'] = context['ds']
     df_final.to_csv(csv_filename, index=False)
 
     return csv_filename
